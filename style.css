@@ -1,0 +1,262 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,900" rel="stylesheet">html,
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body {
+	background-color: red;
+}
+
+#form {
+	width: 100%;
+	height: 475px;
+	position: absolute;
+	top: 21%;
+}
+
+#form-inner {
+	width: 920px;
+	background-color: red;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#left-col {
+	float: left;
+	height: 415px;
+	width: 340px;
+	background: -moz-linear-gradient(50% 0% -90deg, rgba(255, 222, 23, 1) 0%, rgba(241, 90, 41, 1) 35.3%, rgba(190, 30, 45, 1) 65.85%, rgba(147, 27, 41, 1) 100%);
+	background: -webkit-linear-gradient(-90deg, rgba(255, 222, 23, 1) 0%, rgba(241, 90, 41, 1) 35.3%, rgba(190, 30, 45, 1) 65.85%, rgba(147, 27, 41, 1) 100%);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0, rgba(255, 222, 23, 1)), color-stop(0.353, rgba(241, 90, 41, 1)), color-stop(0.6585, rgba(190, 30, 45, 1)), color-stop(1, rgba(147, 27, 41, 1)));
+	background: -o-linear-gradient(-90deg, rgba(255, 222, 23, 1) 0%, rgba(241, 90, 41, 1) 35.3%, rgba(190, 30, 45, 1) 65.85%, rgba(147, 27, 41, 1) 100%);
+	background: -ms-linear-gradient(-90deg, rgba(255, 222, 23, 1) 0%, rgba(241, 90, 41, 1) 35.3%, rgba(190, 30, 45, 1) 65.85%, rgba(147, 27, 41, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDE17', endColorstr='#931B29' ,GradientType=0)";
+	background: linear-gradient(180deg, rgba(255, 222, 23, 1) 0%, rgba(241, 90, 41, 1) 35.3%, rgba(190, 30, 45, 1) 65.85%, rgba(147, 27, 41, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDE17', endColorstr='#931B29', GradientType=0);
+	box-shadow: 6.4px 4px 10px rgba(0, 0, 0, 0.50);
+	position: relative;
+	z-index: 999;
+	padding: 30px 60px;
+}
+
+#left-col img {
+	width: 340px;
+	height: 152px;
+}
+
+#left-col form {
+	display: block;
+	margin: 0 auto;
+	padding: 35px 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type=text] {
+	width: 180px;
+	height: 55px;
+	margin: 8px auto;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid;
+	border-color: rgba(255, 255, 255, 0.25);
+	font-family: 'Roboto', sans-serif;
+	vertical-align: middle;
+	color: white;
+	font-size: 16px;
+	line-height: 55px;
+	padding: 0 10px;
+	text-align: center;
+	display: block;
+	transition: width ease-in-out .35s, left .35s, right .35s;
+}
+
+input[type=text]::placeholder {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+input:focus {
+	background: rgba(255, 255, 255, 0.06);
+	width: 263px;
+	outline-color: rgba(251, 176, 64, 1);
+}
+
+button {
+	width: 285px;
+	height: 50px;
+	background: rgba(251, 176, 64, 1);
+	border: none;
+	margin: 16px auto;
+	display: block;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: background-color ease-in-out .35s, box-shadow ease-in-out .35s;
+}
+
+button:hover {
+	background: rgba(247, 148, 30, 1);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#right-col {
+	float: right;
+	height: 435px;
+	width: 460px;
+	background: -moz-radial-gradient(50% 50%, circle farthest-corner, rgba(241, 90, 41, 0.97) 0%, rgba(147, 27, 41, 1) 100%);
+	background: -webkit-radial-gradient(50% 50%, circle farthest-corner, rgba(241, 90, 41, 0.97) 0%, rgba(147, 27, 41, 1) 100%);
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 234.2, color-stop(0, rgba(241, 90, 41, 0.97)), color-stop(1, rgba(147, 27, 41, 1)));
+	background: -o-radial-gradient(50% 50%, circle farthest-corner, rgba(241, 90, 41, 0.97) 0%, rgba(147, 27, 41, 1) 100%);
+	background: -ms-radial-gradient(50% 50%, circle farthest-corner, rgba(241, 90, 41, 0.97) 0%, rgba(147, 27, 41, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Stlye=2);" background: radial-gradient(50% 50%, circle farthest-corner, rgba(241, 90, 41, 0.97) 0%, rgba(147, 27, 41, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=6.4, OffY=6.4, Color='#231F20') progid:DXImageTransform.Microsoft.Alpha(Stlye=2);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+	text-align-last: center;
+	font-family: 'Roboto', sans-serif;
+	padding: 20px 0;
+}
+
+#right-col h2 {
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+hr {
+	width: 267px;
+	color: white;
+}
+
+ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.routes {
+	height: 290px;
+	width: 330px;
+	display: block;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.best {
+	margin: 0 0 40px 0!important;
+}
+
+.route-row {
+	height: 40px;
+	width: 350px;
+	display: block;
+	margin: 0 0 12px 0;
+}
+
+.route-inner {
+	width: 350px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.route-number {
+	width: 40px;
+	height: 40px;
+	margin: 0 12px 0 0;
+	background: rgba(239, 65, 54, 1);
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	color: white;
+	box-shadow : 1px 1px 10px rgba(35, 31, 32, 0.3);
+}
+
+.route-details {
+	width: 170px;
+	height: 30px;
+	margin: 0 12px 0 0;
+	background: rgba(239, 65, 54, 0.47);
+	float: left;
+	color: white;
+	
+	white-space: nowrap; 
+     
+    overflow: hidden;
+    text-overflow: ellipsis; 
+	line-height:30px;
+	font-size:16px;
+	padding:5px 15px;
+	box-shadow : 1px 1px 10px rgba(35, 31, 32, 0.3);
+	
+}
+
+.route-price {
+	width: 86px;
+	height: 40px;
+	margin: 0;
+	float: right;
+	background: rgba(247, 146, 30, 1);
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	box-shadow : 1px 1px 10px rgba(35, 31, 32, 0.3);
+}
+
+.route-price img {
+	height: 21px;
+	margin: 9px 0px 9px 7px;
+	float: left;
+}
+.best .route-price {
+	background : rgba(141, 198, 63, 0.75);
+}
+
+.departureCity {
+	color:#FBB040;
+}
+
+.arrivalCity {
+	
+}
